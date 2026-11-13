@@ -1,18 +1,3 @@
-// Kailen Patel — resume reproduced from the supplied PDF / DOCX.
-// Edit this file in VS Code using the Tinymist extension.
-// All styling is deliberately black and white.
-//
-// Compile: typst compile KailenPatelResume.typ KailenPatelResume_Typst.pdf
-//
-// Spacing revision: increased paragraph leading and component spacing.
-// If you want a little more/less breathing room, adjust:
-//   - par(leading: ...): lines that wrap inside bullets
-//   - bullet(... below: ...): separation between bullet items
-//   - entry(... below: ...): separation between title/role rows
-//   - section(... above/below: ...): headings and divider rules
-//
-// Uses only Times New Roman to avoid the missing "Tinos" font warning.
-
 #set page(
   paper: "us-letter",
   margin: (top: 0.38in, bottom: 0.18in, left: 0.40in, right: 0.36in),
@@ -78,7 +63,7 @@
 #bullet([Deployed Prometheus and Grafana with Docker Compose to visualize network bandwidth, server temperatures, and hardware health, enabling centralized diagnostics and troubleshooting])
 #bullet([Resolved overlapping-subnet routing conflicts by migrating to a non-conflicting LAN subnet, restoring access to homelab devices for all remote VPN clients])
 
-#block(above: 6pt, below: 0pt)
+#v(4pt)
 #entry([*Distributed Command Execution & Membership Service*], [_August 2026 - Present_])
 #bullet([Built the networking and cluster management layer for a distributed system of 10 Linux VMs in Go, supporting dynamic node joins, leaves, crashes, and rejoins])
 #bullet([Implemented peer-to-peer gossip-based failure detection with heartbeats and SWIM-style suspicion, which detects failures within 3 seconds and propagates membership changes across the system within 6 seconds])
